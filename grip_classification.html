@@ -80,13 +80,15 @@
               <strong>Training the Model</strong><br>
               Training a convolutional neural network on my synthetic dataset resulted in ~99% accuracy
               when tested on data that was generated in a similar manner to the process above. 
-              That said, when tested in real life, the model demonstrated ~87% accuracy. <br><br>
+              That said, when tested in real life, the model demonstrated ~87% accuracy. Since most
+              of the data collected was my own hand, I expected some overfitting to be present.
+              I plan to address this moving forward by diversifying my dataset.<br><br>
               <strong>Prediction in Real-Time</strong><br>
-              This step is what you see in the video above. The classifier trained in the previous step
+              This step can be seen in the video above. The classifier trained in the previous step
               is running on real-time video data. Frames are classified based on the grip a user offers
               to the camera, then an averaging algorithm displays the result on screen in blue text.<br><br>
               <strong>Next Steps</strong><br>
-              The ultimate goal of this project is to provide pitcher's feedback on how well they are 
+              The ultimate goal of this project is to provide pitchers feedback on how well they are 
               disguising their pitches. In the short-term, I will implement an object detection algorithm 
               I developed for still images on the same video stream you see here. After that, I plan 
               to generate an additional data set with actual pitches from a hitter's perspective. With 
