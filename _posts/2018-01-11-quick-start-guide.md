@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Let's test spoilers"
+title:  "Using CNN to Create User-specific Symbols for Navigation"
 author: sal
-categories: [ Jekyll, tutorial ]
+categories: [ Deep Learning, Python, ROS, Gazebo ]
 image: assets/images/12.jpg
 featured: true
 hidden: true

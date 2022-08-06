@@ -1,35 +1,43 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About Me
 permalink: /about
-comments: true
+comments: false
 ---
 
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>Detail-oriented software/data engineer with 3 years of professional experience. Diverse background has cultivated the technical skillset necessary to analyze complex datasets and developed business acumen critical to deriving actionable insights. Extremely quick and efficient learner. Passionate about using skills to positively impact the world by overcoming the challenges of tomorrow.<br>
+<br>
+<h5>Education</h5>
+<strong>Northwestern University</strong><br>
+M.S. in Robotics (2022)<br>
+<br>
+<strong>Massachusetts Institute of Technology (MIT)</strong><br>
+S.B. in Mechanical Engineering (2017)<br>
+<br><br>
+<h5>My Links</h5>
+<strong>Github: </strong><a target="_blank" rel="noopener noreferrer" href="https://github.com/mpjohns9?tab=repositories">https://github.com/mpjohns9</a><br>
+<br>
+<strong>LinkedIn: </strong><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marshall-p-johnson/">https://www.linkedin.com/in/marshall-p-johnson</a>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
+</p>
+
+<!-- <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
 <h4>Documentation</h4>
 
 <p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
 
 <h4>Questions or bug reports?</h4>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p> -->
 
 </div>
 
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
-
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
-
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
-</div>
+<img id="headshot" src="assets/images/headshot.jpg">
 </div>
 </div>

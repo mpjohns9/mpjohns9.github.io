@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Inception Movie"
+title:  "EKF-SLAM from Scratch"
 author: john
 categories: [ Jekyll, tutorial ]
 tags: [red, yellow]
