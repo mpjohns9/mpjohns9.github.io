@@ -11,19 +11,19 @@ post_class: post-template
     <div class="row">
 
         <!-- Post Share -->
-        <div class="col-md-2 pl-0">
-            <!-- {% include share.html %} -->
-        </div>
+        <!-- <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div> -->
 
         <!-- Post -->
-        <!-- {% assign author = site.authors[page.author] %} -->
+        {% assign author = site.authors[page.author] %}
 
-        <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="col-lg-12 flex-first flex-md-unordered">
             <div class="mainheading">
 
                 <!-- Author Box -->
-                {% if page.author %}
-                <!-- <div class="row post-top-meta">
+                <!-- {% if page.author %}
+                <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
                         <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
@@ -35,11 +35,11 @@ post_class: post-template
                         <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
                         <span class="author-description">{{ author.description }}</span>
                     </div>
-                </div> -->
-                {% endif %}
+                </div>
+                {% endif %} -->
 
                 <!-- Post Title -->
-                <!-- <h1 class="posttitle">{{ page.title }}</h1> -->
+                <h1 class="posttitle">{{ page.title }}</h1>
 
             </div>
 
@@ -50,7 +50,7 @@ post_class: post-template
             <!-- End Adsense -->
 
             <!-- Post Featured Image -->
-            <!-- {% if page.image %}
+            {% if page.image %}
 
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
@@ -58,13 +58,25 @@ post_class: post-template
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
 
-            {% endif %} -->
+            {% endif %}
             <!-- End Featured Image -->
 
+            <!-- Post Subtitle -->
+            <div class="article-post-sub">
+                {{page.subtitle}}
+            </div>
+
+            <!-- Post Subtitle Description -->
+            <div class="article-post-sub-desc">
+                {{page.subsubtitle}}
+            </div>
+
+            <a class="repo-link" href="{{page.repo}}" target="_blank" rel="noopener noreferrer">Github Repository</a>
+            <br>
             <!-- Post Content -->
-            <!-- <div class="article-post"> -->
+            <div class="article-post">
                 <!-- Toc if any -->
-                <!-- {% if page.toc %}
+                {% if page.toc %}
                     {% if page.beforetoc %}
                         <p><em>{{page.beforetoc}}</em></p>
                     {% endif %}
@@ -72,10 +84,10 @@ post_class: post-template
                         <h3 class="font-weight-bold">Summary</h3>
                         {% include toc.html html=content %}
                     </div>
-                {% endif %} -->
+                {% endif %}
                 <!-- End Toc -->
                 {{content}}
-            <!-- </div> -->
+            </div>
 
             <!-- Rating -->
             <!-- {% if page.rating %}
@@ -85,17 +97,17 @@ post_class: post-template
             {% endif %} -->
 
             <!-- Post Date -->
-            <!-- <p>
+            <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                <span class="post-date">{{ page.when }}</time></span>           
+                <!-- {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>) -->
                 {% endif %}
                 </small>
-            </p> -->
+            </p>
 
             <!-- Post Categories -->
-            <!-- <div class="after-post-cats">
+            <div class="after-post-cats">
                 <ul class="tags mb-4">
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
@@ -104,11 +116,11 @@ post_class: post-template
                     </li>
                     {% endfor %}
                 </ul>
-            </div> -->
+            </div>
             <!-- End Categories -->
 
             <!-- Post Tags -->
-            <!-- <div class="after-post-tags">
+            <div class="after-post-tags">
                 <ul class="tags">
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
@@ -117,11 +129,11 @@ post_class: post-template
                     </li>
                     {% endfor %}
                 </ul>
-            </div> -->
+            </div>
             <!-- End Tags -->
 
             <!-- Prev/Next -->
-            <!-- <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
             <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
             {% endif %}
@@ -129,7 +141,7 @@ post_class: post-template
             <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
-            </div> -->
+            </div>
             <!-- End Categories -->
 
         </div>
@@ -149,8 +161,8 @@ post_class: post-template
                 {% include disqus.html %}
             </div>
         </div>
-    </div> -->
-{% endif %}
+    </div>
+{% endif %} -->
 <!--End Comments
 ================================================== -->
 
