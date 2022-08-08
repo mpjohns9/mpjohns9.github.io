@@ -7,6 +7,16 @@ License: https://www.wowthemes.net/freebies-license/
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
+
+#preloadImages {
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url("{{site.baseurl}}/assets/images/baseball.gif");
+    background-image: url("{{site.baseurl}}/assets/images/mixalot.gif");
+    background-image: url("{{site.baseurl}}/assets/images/slam.gif");
+    /* background-image: url("{{site.baseurl}}/assets/images/baseball.gif"); */
+}
 .mainheading {
     padding: 1rem 0rem;
 }
