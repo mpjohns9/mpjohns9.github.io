@@ -9,7 +9,6 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 #preload-img {
-    visibility: hidden;
     position: absolute;
     left: -999em;
 }
