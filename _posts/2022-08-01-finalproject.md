@@ -2,7 +2,8 @@
 layout: post
 title:  "Using a Convolutional Neural Network (CNN) to Create User-specific Symbols for Navigation"
 categories: [ Machine Learning, Python, ROS, Gazebo, Computer Vision ]
-image: assets/images/baseball.gif
+image: assets/images/coming-soon.jpg
+gif: assets/images/coming-soon.jpg
 when: June - August 2022
 featured: false
 hidden: true
