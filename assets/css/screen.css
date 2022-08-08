@@ -117,7 +117,7 @@ section.recent-posts {
 }
 
 .maxthumb {
-    max-height: 300px;
+    max-height: 500px;
     overflow: hidden;
 }
 
@@ -309,7 +309,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.posttitle {
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -350,6 +350,9 @@ blockquote {
 
 .featured-image {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
     margin-bottom: 1.5rem;
 }
 
@@ -497,6 +500,7 @@ ul.tags {
 
 ul.tags li {
     display: inline-block;
+    padding-bottom: 10px;
     font-size: 0.9rem;
 }
 
@@ -698,7 +702,10 @@ h6 {
 .article-post h2,
 .article-post h3,
 .article-post h4,
-.article-post h5,
+.article-post h5 {
+    font-size: 130%;
+    font-weight: 500;
+}
 .article-post h6 {
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -919,3 +926,30 @@ iframe {
     margin-bottom: 0;
 }
 
+.article-post-sub {
+    font-family: Montserrat;
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.article-post-sub-desc {
+    font-family: Montserrat;
+}
+
+.article-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.repo-link {
+    display: inline-block;
+    font-family: Montserrat;
+    padding-bottom: 12px;
+}
+
+.image-caption {
+    font-size: 75%;
+    text-align: center;
+}
