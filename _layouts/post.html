@@ -135,15 +135,23 @@ post_class: post-template
             <!-- End Tags -->
 
             <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
-            {% endif %}
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            <a class="prev d-block col-lg-6" href="{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-lg-6 text-lg-right float-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
+            {% else %}
+            <div class="row PageNavigation d-flex justify-content-end font-weight-bold">
+            {% if page.next.url %}
+            <a class="next d-block col-lg-6 text-lg-right float-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            {% endif %}
+            <div class="clearfix"></div>
+            </div>
+            {% endif %}
+
             <!-- End Categories -->
 
         <!-- </div> -->
