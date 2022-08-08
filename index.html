@@ -3,11 +3,12 @@ layout: default
 title: Home
 ---
 
-<div id="preload-img">
-    <img src="{{site.baseurl}}/assets/images/baseball.gif">
-    <img src="{{site.baseurl}}/assets/images/slam.gif">
-    <img src="{{site.baseurl}}/assets/images/mixalot.gif">
-</div>
+{% for post in paginator.posts %}
+
+    <link rel="preload" href="{{site.baseurl}}/{{post.gif}}">
+
+{% endfor %}
+<div>testing</div>
 
 
 {% if page.url == "/" %}
