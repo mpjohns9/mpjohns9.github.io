@@ -8,6 +8,12 @@ License: https://www.wowthemes.net/freebies-license/
     .container {max-width:80%;}
 }
 
+#preload-img {
+    visibility: hidden;
+    position: absolute;
+    left: -999em;
+}
+
 .mainheading {
     padding: 1rem 0rem;
 }
