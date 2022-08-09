@@ -711,10 +711,12 @@ h6 {
 .article-post h5 {
     font-size: 130%;
     font-weight: 500;
+    margin-bottom: 1.5rem;
 }
 .article-post h6 {
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+    font-size: 100%;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .article-post img.shadow {
@@ -917,6 +919,14 @@ iframe {
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+#linkedin-logo:hover {
+    fill: black;
+}
+
+#github-logo:hover {
+    fill: black;
 }
 
 #contact-link {
