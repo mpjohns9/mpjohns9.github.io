@@ -2,7 +2,7 @@
 layout: post
 title:  "Using a Convolutional Neural Network (CNN) to Create User-specific Symbols for Navigation"
 subtitle: "Final Project"
-subsubtitle: "MS in Robotics &#8212 Northwestern University &#8212 Advised by: Matthew Elwin, PhD & Ola Kalinowska"
+subsubtitle: "MS in Robotics &#8212 Northwestern University | Advised by: Matthew Elwin, PhD & Ola Kalinowska"
 categories: [ Machine Learning, Python, ROS, Gazebo, Computer Vision, Simulation]
 image: assets/images/sp_thumb.png
 gif: assets/images/sp_thumb.png
