@@ -2,7 +2,7 @@
 layout: post
 title:  "Using a Convolutional Neural Network (CNN) to Create User-specific Symbols for Navigation"
 subtitle: "Final Project"
-subsubtitle: "MS in Robotics &#8212 Northwestern University"
+subsubtitle: "MS in Robotics &#8212 Northwestern University &#8212 Advised by: Matthew Elwin, PhD & Ola Kalinowska"
 categories: [ Machine Learning, Python, ROS, Gazebo, Computer Vision, Simulation]
 image: assets/images/sp_thumb.png
 gif: assets/images/sp_thumb.png
@@ -44,7 +44,7 @@ The maze generation algorithm developed through this project is able to create a
 
 Easy                    |  Medium            | Hard                  
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="{{site.baseurl}}/assets/images/easy_maze.png" width="500" /> |  <img src="{{site.baseurl}}/assets/images/medium_maze.png" width="500" /> | <img src="{{site.baseurl}}/assets/images/hard_maze.png" width="500" />
+<img src="{{site.baseurl}}/assets/images/easy_maze.png" width="350" /> |  <img src="{{site.baseurl}}/assets/images/medium_maze.png" width="350" /> | <img src="{{site.baseurl}}/assets/images/hard_maze.png" width="350" />
 
 <br><br>
 
@@ -54,15 +54,14 @@ This section highlights both the data collection and testing processes. After co
 <h6>Data Collection</h6>
 Below are demonstrations of the data collection process using a randomly generated maze of easy difficulty. The chart overlays shown in the videos represent the input the user is providing through the SNP sensor.  
 
-<video width="1080" controls>
+<video width="720" controls>
   <source src="{{site.baseurl}}/assets/images/author_demo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 <br>
 
-<h6>Other User</h6>
-<video width="1080" controls>
+<video width="720" controls>
   <source src="{{site.baseurl}}/assets/images/other_demo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -72,7 +71,7 @@ Your browser does not support the video tag.
 <h6>Live Testing</h6>
 This video shows a user navigating a maze using their own set of symbols created through the data collection and model training phases. In this trial, the model achieved 100% accuracy. Overall, the accuracy for this user was 91% (See User 1 below).  
 
-<video width="1080" controls>
+<video width="720" controls>
   <source src="{{site.baseurl}}/assets/images/manual_demo.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -81,14 +80,7 @@ Your browser does not support the video tag.
 
 After collecting data using the process demonstrated above, a model was trained and tested live. As an example, a graphical representation of one set of symbols created by each user is shown below, along with results and qualitative commentary from the trials. Accuracy was determined by comparing user's intended action and the actual movement of the robot resulting from the model's prediction.  
 
-Movement Action | User 1 | User 2 | User 3 | User 4 | User 5                
-:---------------|:-------|:-------|:-------|:-------|:-------
-Stop | ![](maze_gen/assets/sp_user1_0.png) | ![](maze_gen/assets/sp_user2_0.png) | ![](maze_gen/assets/sp_user3_0.png) | ![](maze_gen/assets/sp_user4_0.png) | ![](maze_gen/assets/sp_user5_0.png)
-Start | ![](maze_gen/assets/sp_user1_1.png) | ![](maze_gen/assets/sp_user2_1.png) | ![](maze_gen/assets/sp_user3_1.png) | ![](maze_gen/assets/sp_user4_1.png) | ![](maze_gen/assets/sp_user5_1.png)
-Left Turn | ![](maze_gen/assets/sp_user1_2.png) | ![](maze_gen/assets/sp_user2_2.png) | ![](maze_gen/assets/sp_user3_2.png) | ![](maze_gen/assets/sp_user4_2.png) | ![](maze_gen/assets/sp_user5_2.png)
-Right Turn | ![](maze_gen/assets/sp_user1_3.png) | ![](maze_gen/assets/sp_user2_3.png) | ![](maze_gen/assets/sp_user3_3.png) | ![](maze_gen/assets/sp_user4_3.png) | ![](maze_gen/assets/sp_user5_3.png)
-Results | Successfully navigated maze with minimal error. <br><br>**Overall, model predicted correct movement actions with 91% accuracy.** | Successfully navigated maze with minimal error. Right Turn was misclassified occasionally. <br><br>**Overall, model predicted correct movement actions with 83% accuracy.** | Successfully navigated maze with minimal error. Occasionally, Forward would be misclassified as Stop. <br><br>**Overall, model predicted correct movement actions with 87% accuracy.** | Successfully navigated maze with almost no error. Stop was misclassified as Left Turn, but rarely. <br><br>**Overall, model predicted correct movement actions with 95% accuracy.** | Successfully navigated maze with minimal error. Stop was misclassified as Left Turn occasionally. <br><br>**Overall, model predicted correct movement actions with 87% accuracy.**
-
+<img src="{{site.baseurl}}/assets/images/results_table.png" width="95%"/>
 
 Users 1-4 were profiles created by the author to test the robustness of the pipeline. User 5 was not the author and was given no instructions other than to use the sip and puff device to guide the robot through the simulated maze. In both cases, the data augmentation process outlined above was used to generate more data. In every trial, the trained model was able to successfully predict movement actions from sip and puff inputs; the user was able to easily navigate a maze using their custom set of symbols.  
 
