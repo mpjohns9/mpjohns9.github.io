@@ -25,7 +25,7 @@ The primary objective of this project was to classify [sip-and-puff (SNP)](https
 <h5>The Model</h5>
 This project uses a 1-dimensional convolutional neural network (1D CNN) to classify user inputs into movement actions: forward, left, right, and stop. For each user, a new model is trained to make predictions specific to that user. The 1D CNN is trained on actual data collected from the user, as well as augmented data derived from the initial SNP input signals.  
 
-![1D CNN]({{site.baseurl}}/assets/images/model.png)  
+<img src="{{site.baseurl}}/assets/images/model.png" width="50%"/>
 
 <br>
 
