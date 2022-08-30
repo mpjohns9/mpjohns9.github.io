@@ -4,8 +4,8 @@ title:  "Using a Convolutional Neural Network (CNN) to Create User-specific Symb
 subtitle: "Final Project"
 subsubtitle: "MS in Robotics &#8212 Northwestern University | Advised by: Matthew Elwin, PhD & Ola Kalinowska"
 categories: [ Machine Learning, Python, ROS, Gazebo, Computer Vision, Simulation]
-image: assets/images/sp_thumb.png
-gif: assets/images/sp_thumb.png
+image: assets/images/sp_thumb_edit.png
+gif: assets/images/sp_thumb_edit.png
 repo: "https://github.com/mpjohns9/MSR_Final_Project"
 when: June - August 2022
 featured: false
