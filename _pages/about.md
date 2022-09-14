@@ -8,7 +8,7 @@ comments: false
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>Detail-oriented software/data engineer with 3 years of professional experience. Diverse background has cultivated the technical skillset necessary to analyze complex datasets and developed business acumen critical to deriving actionable insights. Extremely quick and efficient learner. Passionate about using skills to positively impact the world by overcoming the challenges of tomorrow.<br>
+<p>Detail-oriented software/data engineer with 3 years of professional experience. Diverse background has cultivated the technical skillset necessary to analyze complex datasets and developed business acumen critical to deriving actionable insights. Extremely quick and efficient learner. Passionate about using skills to positively impact the world by overcoming difficult challenges.<br>
 <br>
 <h5>Education</h5>
 <strong>Northwestern University</strong><br>
